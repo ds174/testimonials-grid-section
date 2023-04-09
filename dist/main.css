@@ -22,6 +22,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 /*
@@ -30,7 +31,6 @@ body {
   5. Improve text rendering
 */
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -75,4 +75,64 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+main {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  place-content: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 1.875rem;
+}
+main .person {
+  padding: 1.625rem 2rem 2rem 2rem;
+  border-radius: 0.5rem;
+}
+main .person__heading {
+  display: flex;
+  gap: 1rem;
+}
+main .person__heading__image {
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+main .person__heading__name {
+  font-size: 1rem;
+}
+main .person__heading__status {
+  font-size: 0.688rem;
+}
+main .person__quote {
+  margin-top: 1.125rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+main .person__paragraph {
+  margin-top: 1rem;
+}
+main #first {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(263, 55%, 52%);
+}
+main #second {
+  background-color: hsl(217, 19%, 35%);
+}
+main #third {
+  background-color: hsl(0, 0%, 100%);
+}
+main #fourth {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219, 29%, 14%);
+}
+main #fifth {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=main.css.map */
