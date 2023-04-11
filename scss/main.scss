@@ -1,3 +1,125 @@
 @import "variables";
 @import "reset";
 
+body {
+  background-color: $Light_grayish_blue;
+}
+main {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  place-content: center;
+  grid-template-rows: repeat(2, 17.625rem);
+  grid-template-columns: repeat(4, 15.938rem);
+  gap: 1.5rem 1.875rem;
+  margin-top: 10rem;
+
+  .person {
+    padding: 1.625rem 2rem 2rem 2rem;
+    border-radius: 0.5rem;
+
+    &__heading {
+      display: flex;
+      gap: 1rem;
+
+      &__image {
+        border-radius: 50%;
+        height: 1.75rem;
+        width: 1.75rem;
+      }
+      &__name {
+        font-size: 1rem;
+      }
+      &__status {
+        font-size: 0.688rem;
+        opacity: 50%;
+      }
+    }
+    &__quote {
+      margin-top: 1.125rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    &__paragraph {
+      margin-top: 1rem;
+      font-size: 0.813rem;
+      opacity: 70%;
+    }
+  }
+
+  #first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: $Moderate_violet;
+    position: relative;
+    color: $Light_gray;
+    .person__quote {
+      color: white;
+    }
+    .person__heading__image {
+      border: 2px solid #a775f1;
+    }
+    .person__heading__name {
+      color: white;
+    }
+  }
+
+  #second {
+    background-color: $Very_dark_grayish_blue;
+    color: $White;
+    .person__quote {
+      color: white;
+    }
+    .person__heading__name {
+      color: white;
+    }
+  }
+
+  #third {
+    background-color: $White;
+    color: $Very_dark_grayish_blue;
+  }
+  #fourth {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: $Very_dark_blackish_blue;
+    color: white;
+    .person__quote {
+      color: white;
+    }
+    .person__heading__image {
+      border: 2px solid #733fc8;
+    }
+    .person__heading__name {
+      color: $White;
+    }
+  }
+
+  #fifth {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: $White;
+    color: $Very_dark_grayish_blue;
+  }
+
+  .first__person_quotation {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    opacity: 50%;
+  }
+}
+@media (max-width: 23.5rem) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 4.438rem 1.5rem;
+  }
+  .first__person_quotation {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+  }
+}

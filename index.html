@@ -8,31 +8,27 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/dist/main.css">
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <main class="testimonial-grid">
 
-    <article class="person">
+    <article class="person" id="first">
       <div class="person__heading">
-        <img src="" alt="daniel clifford photo" class="person__heading__image">
+        <img src="images/image-daniel.jpg" alt="daniel clifford photo" class="person__heading__image">
+        <div class="person__heading__namestatus">
         <h2 class="person__heading__name">Daniel Clifford</h2>
         <p class="person__heading__status"> Verified Graduate</p>
+        </div>
       </div>
+      <img src="images/bg-pattern-quotation.svg" alt="quotation" class="first__person_quotation">
       <p class="person__quote"> I received a job offer mid-course, and the subjects I learned were current, if not more
         so,
         in the company I joined. I honestly feel I got every penny’s worth.</p>
@@ -44,11 +40,13 @@
         the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
     </article>
 
-    <article class="person">
+    <article class="person" id="second">
       <div class="person__heading">
-        <img src="" alt="jonathan walters photo" class="person__heading__image">
+        <img src="images/image-jonathan.jpg" alt="jonathan walters photo" class="person__heading__image">
+        <div class="person__heading__namestatus">
         <h2 class="person__heading__name"> Jonathan Walters</h2>
         <p class="person__heading__status"> Verified Graduate</p>
+        </div>
       </div>
       <p class="person__quote"> The team was very supportive and kept me motivated</p>
       <p class="person__paragraph"> “ I started as a total newbie with virtually no coding skills. I now work as a
@@ -56,23 +54,27 @@
         for a big company. This was one of the best investments I’ve made in myself. ”</p>
     </article>
 
-    <article class="person">
+    <article class="person" id="third">
       <div class="person__heading">
-        <img src="" alt="jeanette harmon photo" class="person__heading__image">
+        <img src="images/image-jeanette.jpg" alt="jeanette harmon photo" class="person__heading__image">
+        <div class="person__heading__namestatus">
         <h2 class="person__heading__name">Jeanette Harmon</h2>
         <p class="person__heading__status">Verified Graduate</p>
+        </div>
       </div>
       <p class="person__quote">An overall wonderful and rewarding experience</p>
-      <p class="person__parapraph"> “ Thank you for the wonderful experience! I now have a job I really enjoy, and make
+      <p class="person__paragraph"> “ Thank you for the wonderful experience! I now have a job I really enjoy, and make
         a good living
         while doing something I love. ”</p>
     </article>
 
-    <article class="person">
+    <article class="person" id="fourth">
       <div class="person__heading">
-        <img src="" alt="patrick adams photo" class="person__heading__image">
+        <img src="images/image-patrick.jpg" alt="patrick adams photo" class="person__heading__image">
+        <div class="person__heading__namestatus">
         <h2 class="person__heading__name">Patrick Abrams</h2>
         <p class="person__heading__status"> Verified Graduate</p>
+        </div>
       </div>
       <p class="person__quote"> Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from
         them and
@@ -84,11 +86,13 @@
         an incredible community of smart and amazing people. ”</p>
     </article>
 
-    <article class="person">
+    <article class="person" id="fifth">
       <div class="person__heading">
-        <img src="" alt="kira whittle photo" class="person__heading__image">
+        <img src="images/image-kira.jpg" alt="kira whittle photo" class="person__heading__image">
+        <div class="person__heading__namestatus">
         <h2 class="person__heading__name"> Kira Whittle</h2>
         <p class="person__heading__status"> Verified Graduate</p>
+        </div>
       </div>
       <p class="person__quote">Such a life-changing experience. Highly recommended!</p>
       <p class="person__paragraph">“ Before joining the bootcamp, I’ve never written a line of code. I needed some
@@ -102,11 +106,6 @@
         100% recommend! ”</p>
     </article>
   </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>

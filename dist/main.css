@@ -69,22 +69,18 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
+body {
+  background-color: hsl(210, 46%, 95%);
 }
 
 main {
-  background-color: hsl(210, 46%, 95%);
   font-family: "Barlow Semi Condensed", sans-serif;
   display: grid;
   place-content: center;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 17.625rem);
+  grid-template-columns: repeat(4, 15.938rem);
   gap: 1.5rem 1.875rem;
+  margin-top: 10rem;
 }
 main .person {
   padding: 1.625rem 2rem 2rem 2rem;
@@ -104,6 +100,7 @@ main .person__heading__name {
 }
 main .person__heading__status {
   font-size: 0.688rem;
+  opacity: 50%;
 }
 main .person__quote {
   margin-top: 1.125rem;
@@ -112,22 +109,53 @@ main .person__quote {
 }
 main .person__paragraph {
   margin-top: 1rem;
+  font-size: 0.813rem;
+  opacity: 70%;
 }
 main #first {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: hsl(263, 55%, 52%);
+  position: relative;
+  color: hsl(0, 0%, 81%);
+}
+main #first .person__quote {
+  color: white;
+}
+main #first .person__heading__image {
+  border: 2px solid #a775f1;
+}
+main #first .person__heading__name {
+  color: white;
 }
 main #second {
   background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+main #second .person__quote {
+  color: white;
+}
+main #second .person__heading__name {
+  color: white;
 }
 main #third {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 main #fourth {
   grid-column-start: 2;
   grid-column-end: 4;
   background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+main #fourth .person__quote {
+  color: white;
+}
+main #fourth .person__heading__image {
+  border: 2px solid #733fc8;
+}
+main #fourth .person__heading__name {
+  color: hsl(0, 0%, 100%);
 }
 main #fifth {
   grid-column-start: 4;
@@ -135,4 +163,24 @@ main #fifth {
   grid-row-start: 1;
   grid-row-end: 3;
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+main .first__person_quotation {
+  position: absolute;
+  right: 5rem;
+  top: 0;
+  opacity: 50%;
+}
+
+@media (max-width: 23.5rem) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 4.438rem 1.5rem;
+  }
+  .first__person_quotation {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
