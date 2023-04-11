@@ -77,13 +77,13 @@ main {
   font-family: "Barlow Semi Condensed", sans-serif;
   display: grid;
   place-content: center;
-  grid-template-rows: repeat(2, 17.625rem);
+  grid-template-rows: repeat(2, 17.625rem, 16.625rem);
   grid-template-columns: repeat(4, 15.938rem);
   gap: 1.5rem 1.875rem;
   padding: 10rem;
 }
 main .person {
-  padding: 1.625rem 2rem 2rem 2rem;
+  padding: 1.625rem 2rem 1.625rem 2rem;
   border-radius: 0.5rem;
 }
 main .person__heading {
@@ -96,7 +96,7 @@ main .person__heading__image {
   width: 1.75rem;
 }
 main .person__heading__name {
-  font-size: 1rem;
+  font-size: 0.813rem;
 }
 main .person__heading__status {
   font-size: 0.688rem;
@@ -145,6 +145,9 @@ main #third {
   background-color: hsl(0, 0%, 100%);
   color: hsl(217, 19%, 35%);
 }
+main #third .person__paragraph {
+  margin-top: 1.5rem;
+}
 main #fourth {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -160,6 +163,9 @@ main #fourth .person__heading__image {
 main #fourth .person__heading__name {
   color: hsl(0, 0%, 100%);
 }
+main #fourth .person__paragraph {
+  margin-top: 1.5rem;
+}
 main #fifth {
   grid-column-start: 4;
   grid-column-end: 5;
@@ -167,6 +173,9 @@ main #fifth {
   grid-row-end: 3;
   background-color: hsl(0, 0%, 100%);
   color: hsl(217, 19%, 35%);
+}
+main #fifth .person__paragraph {
+  margin-top: 1.5rem;
 }
 main .first__person_quotation {
   position: absolute;

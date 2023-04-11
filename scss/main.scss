@@ -8,13 +8,13 @@ main {
   font-family: "Barlow Semi Condensed", sans-serif;
   display: grid;
   place-content: center;
-  grid-template-rows: repeat(2, 17.625rem);
+  grid-template-rows: repeat(2, 17.625rem, 16.625rem);
   grid-template-columns: repeat(4, 15.938rem);
   gap: 1.5rem 1.875rem;
   padding: 10rem;
 
   .person {
-    padding: 1.625rem 2rem 2rem 2rem;
+    padding: 1.625rem 2rem 1.625rem 2rem;
     border-radius: 0.5rem;
 
     &__heading {
@@ -27,7 +27,7 @@ main {
         width: 1.75rem;
       }
       &__name {
-        font-size: 1rem;
+        font-size: 0.813rem;
       }
       &__status {
         font-size: 0.688rem;
@@ -41,7 +41,7 @@ main {
       font-weight: 600;
     }
 
-    &__paragraph {
+    &__paragraph{
       margin-top: 1rem;
       font-size: 0.813rem;
       opacity: 70%;
@@ -81,6 +81,9 @@ main {
   #third {
     background-color: $White;
     color: $Very_dark_grayish_blue;
+    .person__paragraph{
+      margin-top: 1.5rem;
+    }
   }
   #fourth {
     grid-column-start: 2;
@@ -96,6 +99,9 @@ main {
     .person__heading__name {
       color: $White;
     }
+    .person__paragraph{
+      margin-top: 1.5rem;
+    }
   }
 
   #fifth {
@@ -105,6 +111,9 @@ main {
     grid-row-end: 3;
     background-color: $White;
     color: $Very_dark_grayish_blue;
+    .person__paragraph{
+      margin-top: 1.5rem;
+    }
   }
 
   .first__person_quotation {
