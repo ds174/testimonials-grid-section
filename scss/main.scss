@@ -11,7 +11,7 @@ main {
   grid-template-rows: repeat(2, 17.625rem);
   grid-template-columns: repeat(4, 15.938rem);
   gap: 1.5rem 1.875rem;
-  margin-top: 10rem;
+  padding: 10rem;
 
   .person {
     padding: 1.625rem 2rem 2rem 2rem;
@@ -38,12 +38,15 @@ main {
       margin-top: 1.125rem;
       font-size: 1.25rem;
       line-height: 1.5rem;
+      font-weight: 600;
     }
 
     &__paragraph {
       margin-top: 1rem;
       font-size: 0.813rem;
       opacity: 70%;
+      line-height: 1.125rem;
+      font-weight: 500;
     }
   }
 
@@ -108,18 +111,17 @@ main {
     position: absolute;
     right: 5rem;
     top: 0;
-    opacity: 50%;
+    opacity: 70%;
   }
 }
-@media (max-width: 23.5rem) {
+@media (max-width: 25rem) {
   main {
     display: flex;
     flex-direction: column;
-    margin: 4.438rem 1.5rem;
-  }
-  .first__person_quotation {
-    position: absolute;
-    right: 1.5rem;
-    top: 0;
+    padding: 4.438rem 1.5rem;
+
+    .first__person_quotation {
+      right: 1.5rem;
+    }
   }
 }
